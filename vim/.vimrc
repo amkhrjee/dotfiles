@@ -11,6 +11,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 " C/C++ Syntax highlighting
 Plugin 'octol/vim-cpp-enhanced-highlight'
+" Autocompletion
+Plugin 'valloric/youcompleteme'''
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
@@ -41,3 +43,5 @@ inoremap {;<CR> {<CR>};<ESC>O
 " Key Mappings
 :map <F5> :tabp
 :map <F6> :tabn
+set completeopt-=preview
+nnoremap <silent> <localleader>h <Plug>(YCMToggleInlayHints))
